@@ -1,0 +1,121 @@
+{
+	"discussion_list": {
+		"discussion_industry&company": {
+			"ID": "discussion-industry&company",
+			"Title": "Industry & Company Insights",
+			"messages": {
+				"m1ewc4s": {
+					"ID": "m1ewc4s",
+					"Title": "Reference/Instruction Librarian",
+					"Time": "2017-12-05 12:02:48 PM",
+					"Author": "Xiao Ming",
+					"MContent": "Good Afternoon, Auburn University is currently searching for a Reference/Instruction Librarian and we would greatly appreciate you posting the job announcement where appropriate.  Here’s a direct link to apply: www.aub.ie/instruction.  Thank you so much.",
+					"replies": {
+						"r2qoc5m": {
+							"ID": "r2qoc5m",
+							"Title": "More information needed",
+							"Time": "2017-12-05 12:05:00 PM",
+							"Author": "Xiao Hong",
+							"RContent": "Hello, I'm really interested in this position. Before I submit my resume and cover letter, does anyone know how the typical workday looks like at Auburn University library? I would like to learn more information about this job position. Thank you!"
+						}
+					}
+				}, 
+				"mefw4sd": {
+					"ID":"mefw4sd",
+					"Title":"Internship at the Nantucket Historical Association - Digital Projects Intern ",
+					"Time":"2017-12-06 02:09:42 AM",
+					"Author":"Li Hua",
+					"MContent":"The Nantucket Historical Association’s summer internship program allows a dynamic group of students with varied interests, strengths, and goals to immerse themselves in an outstanding educational and professional environment. Interns learn and work directly with professionals in a team-based, collaborative environment. The internship is a full-time position that begins on June 1, 2011 and lasts ten to twelve weeks.",
+					"replies": {
+					}
+				}, 
+				"m0dwmv4": {
+					"ID":"m0dwmv4",
+					"Title":"FT position for Dec grads",
+					"Time":"2017-12-06 02:20:40 AM", 
+					"Author":"Brittany", 
+					"MContent":"Graduating in December and Interested in a Career in Healthcare? We offer a unique opportunity for you to gain real world experience working in a busy medical practice. We will train you to interact with patients, manage the flow of patients through the office, assist our physician staff, schedule appointments, proof-read medical reports, answer phones, update our electronic medical record, prepare patient charts and other vital administrative functions of a medical office. We will train you in the various tasks that are the primary focus of these positions.",
+					"replies": {
+					}
+				},
+				"ma43fcw": {
+					"ID": "ma43fcw",
+					"Title": "Position Opening: Collection Development & Assessment Librarian, College of Charleston Libraries",
+					"Time": "2017-12-06 02:26:39 AM",
+					"Author": "Bill",
+					"MContent":"The Collection Development and Assessment Librarian manages the assessment, title selection processes, and licensing of digital and print resources by formulating, articulating, and managing the direction, balance, and focus of the Library’s collections to support learning, teaching, and research. They provide direction for collection development related library liaison activities with academic departments and monitor changes in the College’s academic programs, degrees, and research emphases and adapt collection development decisions to meet emerging needs.",
+					"replies":{
+					}
+				},
+				"m32cgw9": {
+					"ID": "m32cgw9",
+					"Title": "Recruiting a Data Science Facilitator at UW-Madison",
+					"Time": "2017-12-06 02:30:00 AM",
+					"Author": "Andrew",
+					"MContent":"The Data Science Hub at the Wisconsin Institute for Discovery (WID) provides a focal point for programs dedicated to research and application of modern techniques to the management, storage, and analysis of complex data sets.",
+					"replies":{
+					}
+				},
+				"m04ncse": {
+					"ID": "m04ncse",
+					"Title": "EPA Part-Time Geospatial Data Support, Raleigh, NC - Recent MS Grads Welcome to Apply",
+					"Time": "2017-12-06 02:30:11 AM",
+					"Author": "Caroline",
+					"MContent":"The EPA Environmental Research and Business Support Program has an immediate opening for a Chemical Data Support position with the Office of Research and Development at the EPA facility in Research Triangle Park, NC.",
+					"replies":{
+					}
+				},
+				"m9ejcs2": {
+					"ID": "m9ejcs2",
+					"Title": "Ready to Work at EPA in DC? Hiring NOW! Recent Bachelor's Grad Business or Communications",
+					"Time": "2017-12-06 02:30:39 AM",
+					"Author": "Brian",
+					"MContent":"Ever thought about having a great career dedicated to: improving the health and well-being of all Americans? ensuring that we have clean air, pure water and better-protected land? You can have that career at EPA! EPA internships and fellowships provide a great introduction to our work, giving you a sense of whether EPA might be the right place for you.",
+					"replies":{
+					}
+				},
+				"mf93cs1": {
+					"ID": "mf93cs1",
+					"Title": "Job opportunity: Research Data and CRIS Manager – University of the Arts London",
+					"Time": "2017-12-06 02:36:15 AM",
+					"Author": "Shep",
+					"MContent":"The role The successful candidate will be the lead manager and administrator of UAL’s research information systems. These are the recently implemented current research information system (Symplectic Elements) and the established research data repository (ePrints).",
+					"replies": {
+					}
+				},
+				"m1tmc96": {
+					"ID": "m1tmc96",
+					"Title": "ob posting: Acquisitions Specialist (paraprofessional), Haverford College",
+					"Time": "2017-12-06 02:39:31 AM",
+					"Author": "Susan",
+					"MContent":"Together with the Collection Management & Metadata Services Assistant and student assistants, and under the general direction of the Head of Acquisitions & Serials, performs all ordering and receiving activities for library materials other than serials.",
+					"replies":{
+					}
+				},
+				"maowc6x": {
+					"ID": "maowc6x",
+					"Title": "NCEAS Data Science Fellowship",
+					"Time": "2017-12-06 02:26:39 AM",
+					"Author": "David",
+					"MContent":"NCEAS is seeking applications for the 2018 Data Science Fellows program. Our next six-month session will begin in early July. Data Science Fellows will be in residence at NCEAS and will work closely with data and informatics teams to solve data, analysis, and software issues relating to environmental science. ",
+					"replies": {
+					}
+				}
+			}
+	
+		},
+		"discussion-resume&coverletter": {
+			"ID": "discussion-resume&coverletter",
+			"Title": "Resume & Cover Letter"
+		},
+		"discussion-network&interview": {
+			"ID": "discussion-network&interview",
+			"Title": "Network & Interview"
+		},
+		"discussion-jobopportunity": {
+			"ID": "discussion-jobopportunity",
+			"Title": "Job Opportunities"
+		}
+		
+	}
+}
