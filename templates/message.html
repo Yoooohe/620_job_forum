@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+</head>
+<body>
+
+<h1>{{message.Title}}</h1>
+<p>{{message.MContent}}</p>
+<p><span>{{message.Author}}</span></p>
+<time>{{message.Time}}</time>
+
+<ul>
+    {% for reply_id, reply in message.replies.items() %}
+    <li>
+        <h4>{{reply.Title}}</h4>
+        <p>{{reply.RContent}}</p>
+        <p><span>{{reply.Author}}</span></p>
+        <time>{{reply.Time}}</time>
+    </li>
+    {% endfor %}
+</ul>
+<div class = "new-reply">
+	<h4>New Reply</h4>
+	<form class="add-reply" action="{{ url_for('message', message_id = message.ID) }}" method="post">
+		<label>Title
+			<input name="Title" type="text" size = "40" maxlength = "100">
+		</label>
+        <p></p>
+        <label>Author
+			<input name="Author" type="text" size = "40" maxlength = "100">
+		</label>
+		<p></p>
+		<textarea name="RContent" rows = "10" cols = "60"></textarea>
+		<br>
+		<input type = "reset">
+		<input type = "submit">
+	</form>
+</div>
+</body>
+</html>

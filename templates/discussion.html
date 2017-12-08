@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>industry & company</title>
+</head>
+<body>
+<ul>
+    {% for message_id, message in discussion.messages.items() %}
+    <li>
+        <a href="{{ url_for('discussion') }}/{{message_id}}">{{message.Title}}</a>
+        <time>{{message.Time}}</time>
+        <button class="delete" type="button" onclick = button>delete</button>
+    </li>
+    {% endfor %}
+</ul>
+
+<div class = "new-message">
+	<h4>New Message</h4>
+	<form class="add-message" action="{{ url_for('discussion') }}" method="post">
+		<label>Title
+			<input name="Title" type="text" size = "40" maxlength = "100">
+		</label>
+        <p></p>
+        <label>Author
+			<input name="Author" type="text" size = "40" maxlength = "100">
+		</label>
+		<p></p>
+		<textarea name="MContent" rows = "10" cols = "60"></textarea>
+		<br>
+		<input type = "reset">
+		<input type = "submit">
+	</form>
+</div>
+</body>
+</html>
+
+<script>
+    var button = document.querySelector('button.delete');
+
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      var request = new XMLHttpRequest();
+      request.open('Delete', {{ url_for('message', message_id = message_id) }});
+      request.onreadystatechange = function () {
+        if (XMLHttpRequest.DONE === request.readyState
+            && 200 === request.status) {
+          window.location.reload(true);
+        }
+      }
+      request.send();
+    }, false);
+  </script>
+
+{#window.location.pathname#}
+{#, discussion_id=discussion.ID#}
