@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <title>Message</title>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/CreativeWork"
+                vocab="http://schema.org/">
 
-<h1>{{message.Title}}</h1>
-<p>{{message.MContent}}</p>
-<p><span>{{message.Author}}</span></p>
-<time>{{message.Time}}</time>
+<h1 itemprop = "headline">{{message.Title}}</h1>
+<p itemprop = "text">{{message.MContent}}</p>
+<p itemprop = "author" itemscope itemtype = "http://schema.org/Person">
+    <span itemprop = "name">{{message.Author}}</span>
+</p>
+<time itemprop = "dateCreated">{{message.Time}}</time>
 
 <ul>
     {% for reply_id, reply in message.replies.items() %}
-    <li>
-        <h4>{{reply.Title}}</h4>
-        <p>{{reply.RContent}}</p>
-        <p><span>{{reply.Author}}</span></p>
-        <time>{{reply.Time}}</time>
+    <li itemprop = "comment" itemscope itemtype = "http://schema.org/Comment">
+        <h4 itemprop = "name">{{reply.Title}}</h4>
+        <p itemprop = "text">{{reply.RContent}}</p>
+        <p itemprop = "author" itemscope itemtype = "http://schema.org/Person">
+            <span itemprop = "name">{{reply.Author}}</span>
+        </p>
+        <time itemprop = "dateCreated">{{reply.Time}}</time>
     </li>
     {% endfor %}
 </ul>

@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>industry & company</title>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/CreativeWork"
+                vocab="http://schema.org/">
 <ul>
     {% for message_id, message in discussion.messages.items() %}
     <li>
-        <a href="{{ url_for('discussion') }}/{{message_id}}">{{message.Title}}</a>
-        <time>{{message.Time}}</time>
+        <a class = "name" href="{{ url_for('discussion') }}/{{message_id}}">
+            <span itemprop = "headline">{{message.Title}}</span>
+        </a>
+        <time itemprop = "dateCreated">{{message.Time}}</time>
         <button class="delete" type="button" onclick = button>delete</button>
     </li>
     {% endfor %}
