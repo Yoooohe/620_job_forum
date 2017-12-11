@@ -8,7 +8,7 @@ instructor: Ryan Shaw
 Group members: Yuhe Ding, Tian Wang, Chudi Zhong
 
 
-(1) Description: Our project is about job forum service. In this project, you can post a message to the forum and reply other messgae as well. Only Administer can delete the messgae and replies in the forum.
+(1) Description: Our project is about job forum service. In this project, you can post a message to the forum and reply other messgae as well. Only Administer can delete the messgae and replies in the forum. We have realized all the function in message part. Because of time, similar work on reply delete will be finished later.
 
 (2) Project: our project include two html files, a server.py and a data.json
 
