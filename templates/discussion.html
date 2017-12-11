@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <title>industry & company</title>
 </head>
-<body itemscope itemtype="http://schema.org/CreativeWork"
-                vocab="http://schema.org/">
+<body>
+<script>
+    function deleteResource(url)
+    {
+        var request = new XMLHttpRequest();
+        request.open('Delete', url);
+        request.onreadystatechange = function () {
+            if (XMLHttpRequest.DONE === request.readyState
+                && 200 === request.status) {
+                window.location.reload(true);
+            }
+        }
+        request.send();
+    }
+  </script>
 <ul>
     {% for message_id, message in discussion.messages.items() %}
-    <li>
+    <li itemscope itemtype="http://schema.org/CreativeWork"
+                vocab="http://schema.org/">
         <a class = "name" href="{{ url_for('discussion') }}/{{message_id}}">
             <span itemprop = "headline">{{message.Title}}</span>
         </a>
         <time itemprop = "dateCreated">{{message.Time}}</time>
-        <button class="delete" type="button" onclick = button>delete</button>
+        <button
+                class="delete"
+                type="button"
+                onclick="deleteResource('{{ url_for('message', message_id=message_id) }}')">delete</button>
     </li>
     {% endfor %}
 </ul>
@@ -38,22 +55,7 @@
 </body>
 </html>
 
-<script>
-    var button = document.querySelector('button.delete');
 
-    button.addEventListener('click', function (event) {
-      event.preventDefault();
-      var request = new XMLHttpRequest();
-      request.open('Delete', {{ url_for('message', message_id = message_id) }});
-      request.onreadystatechange = function () {
-        if (XMLHttpRequest.DONE === request.readyState
-            && 200 === request.status) {
-          window.location.reload(true);
-        }
-      }
-      request.send();
-    }, false);
-  </script>
 
 {#window.location.pathname#}
 {#, discussion_id=discussion.ID#}
