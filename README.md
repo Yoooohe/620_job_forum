@@ -4,9 +4,9 @@ Readme
 
 Group project: Job Forum Service
 
-Group 
-members: Yuhe Ding, Tian Wang, Chudi Zhong
-instructor: Ryan Shaw
+instructor: Ryan Shaw   
+Group members: Yuhe Ding, Tian Wang, Chudi Zhong
+
 
 (1) Description: Our project is about job forum service. In this project, you can post a message to the forum and reply other messgae as well. Only Administer can delete the messgae and replies in the forum.
 
