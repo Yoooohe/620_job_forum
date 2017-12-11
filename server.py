@@ -145,6 +145,13 @@ class Message(Resource):
         return make_response(
             render_message_as_html(data['discussion_list']['discussion_industry&company']['messages'][message_id]), 201)
 
+    @requires_auth
+    def delete(self, message_id):
+        del data['discussion_list']['discussion_industry&company']['messages'][message_id]
+        return make_response(
+            render_discussion_as_html(data['discussion_list']['discussion_industry&company']), 200)
+
+
 
 
 class MessagetAsJSON(Resource):
@@ -177,11 +184,11 @@ class Discussion(Resource):
         return make_response(
             render_discussion_as_html(data['discussion_list']['discussion_industry&company']), 201)
 
- # 修改中
+    @requires_auth
     def delete(self, message_id):
         del data['discussion_list']['discussion_industry&company']['messages'][message_id]
         return make_response(
-            render_discussion_as_html(data['discussion_list']['discussion_industry&company']), 201)
+            render_discussion_as_html(data['discussion_list']['discussion_industry&company']), 200)
 
 
 class DiscussionAsJSON(Resource):
