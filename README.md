@@ -26,7 +26,7 @@ class = "add-reply" indicates the editing area when adding a new reply
 
 rel="item" indicates that it is one of the item in the discussion
 
-(4) Microdata:
+(4) Microdata:   
 Microdata of message.html
 
 itemtype="http://schema.org/CreativeWork" indicates that the type of message is CreativeWork
