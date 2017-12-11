@@ -2,7 +2,7 @@
 
 Readme 
 
-Group project: Job Forum Service
+**project: Job Forum ServiceGroup**
 
 instructor: Ryan Shaw   
 Group members: Yuhe Ding, Tian Wang, Chudi Zhong
