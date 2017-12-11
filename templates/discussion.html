@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>industry & company</title>
+</head>
+<body>
+<script>
+    function deleteResource(url)
+    {
+        var request = new XMLHttpRequest();
+        request.open('Delete', url);
+        request.onreadystatechange = function () {
+            if (XMLHttpRequest.DONE === request.readyState
+                && 200 === request.status) {
+                window.location.reload(true);
+            }
+        }
+        request.send();
+    }
+  </script>
+<ul>
+    {% for message_id, message in discussion.messages.items() %}
+    <li itemscope itemtype="http://schema.org/CreativeWork"
+                vocab="http://schema.org/">
+        <a class = "name" href="{{ url_for('discussion') }}/{{message_id}}" rel="item">
+            <span itemprop = "headline">{{message.Title}}</span>
+        </a>
+        <time itemprop = "dateCreated">{{message.Time}}</time>
+        <button
+                class="delete"
+                type="button"
+                onclick="deleteResource('{{ url_for('message', message_id=message_id) }}')">delete</button>
+    </li>
+    {% endfor %}
+</ul>
+
+<div class = "new-message">
+	<h4>New Message</h4>
+	<form class="add-message" action="{{ url_for('discussion') }}" method="post">
+		<label>Title
+			<input name="Title" type="text" size = "40" maxlength = "100">
+		</label>
+        <p></p>
+        <label>Author
+			<input name="Author" type="text" size = "40" maxlength = "100">
+		</label>
+		<p></p>
+		<textarea name="MContent" rows = "10" cols = "60"></textarea>
+		<br>
+		<input type = "reset">
+		<input type = "submit">
+	</form>
+</div>
+</body>
+</html>
+
+
+
+{#window.location.pathname#}
+{#, discussion_id=discussion.ID#}
