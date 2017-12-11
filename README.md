@@ -1,7 +1,5 @@
 # 620_job_forum
 
-Readme 
-
 **project: Job Forum ServiceGroup**
 
 instructor: Ryan Shaw   
